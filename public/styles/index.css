@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 40px;
+    border:1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/*When only happen when size is less thna 900px*/
+@media screen and (max-width: 900px){
+    .form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .form{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .heading{
+        width: 30px;
+    }
+}

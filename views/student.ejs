@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Log</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/styles/students.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Student List</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>College</th>
+            <th>Batch</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < students.length; i++) { %>
+                <tr>
+                    <td><a href="/students/ <%=students[i].id %>"> <%= students[i].firstname %></a></td>
+                    <td><%= students[i].lastname %></td>
+                    <td><%= students[i].age %></td>
+                    <td><%= students[i].collegename %></td>
+                    <td><%= students[i].batch %></td>
+                    <td><a href="/students/edit/ <%=students[i].id %>"><i class="fa fa-edit"></i></a></td>
+                    <td><a href="/students/delete/<%=students[i].id %>"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+            <% } %>
+
+        </tbody>
+      </table>   
+      <a href="#" class="btn btn-primary">Enter New Student</a><!--# is the link to the previous page-->
+</body>
+</html>

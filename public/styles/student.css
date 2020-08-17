@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image{
+    height: 250px;
+    width: 200;
+    border: 0.5px solid rgba(200, 200, 200, 0.5);
+}
+
+.table{
+    width: 70%;
+    border: 0.5px solid  rgba(200, 200, 200, 0.5);
+}
+
+h1{
+    margin: 20px;
+}
+
+.btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}

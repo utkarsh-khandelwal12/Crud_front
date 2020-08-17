@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/styles/student.css">
+</head>
+<body>
+    <h1>Student Info</h1>
+    <div class="container">      
+       <table class="table">
+         <thead>
+           <tr>
+             <th>First Name</th>
+             <th>Last Name</th>
+             <th>Age</th>
+             <th>College</th>
+             <th>Batch</th>
+           </tr>
+          </thead>
+         <tbody>
+             <tr>
+                 <td><%= students[i].FirstName %></a></td>                   
+                 <td><%= students[i].LastName %></td>
+                 <td><%= students[i].Age %></td>
+                 <td><%= students[i].CollegeName %></td>
+                 <td><%= students[i].Batch %></td>
+             </tr>
+         </tbody>
+       </table> 
+       <div>
+              <img class="image" src="https://www.google.com/search?q=a+jpg+file+example&rlz=1C1CHZN_enIN907IN907&sxsrf=ALeKk00kLhxF61Pk7fcPpDQIZH77A0j8fw:1597532407859&tbm=isch&source=iu&ictx=1&fir=1kTTzLCC-ntOcM%252C0OJPsWXk41YY4M%252C_&vet=1&usg=AI4_-kRhQTnuKEXervMSesy5V83moWAQGQ&sa=X&ved=2ahUKEwik0r_9p57rAhXoxzgGHfVGCN8Q_h0wAnoECAoQCA#imgrc=1kTTzLCC-ntOcM">
+        </div>  
+    </div>
+    <a href="/students" class="btn btn-primary">See all students</a>
+</body>
+</html>
